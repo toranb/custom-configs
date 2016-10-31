@@ -1,3 +1,5 @@
 colorscheme nova
 set background=dark
-set t_ut= "nova theme is not bce friendly
+hi clear
+hi String ctermfg=81 ctermbg=NONE cterm=NONE guifg=#5fd7ff guibg=NONE gui=NONE
+hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white
