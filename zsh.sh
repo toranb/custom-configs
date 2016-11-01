@@ -14,6 +14,10 @@ bindkey -e
 export NVM_DIR="/Users/toranb/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
 alias gs='git status'
 alias gd='git diff'
 alias gc='git commit'
