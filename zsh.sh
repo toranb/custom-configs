@@ -11,8 +11,12 @@ black="%{$fg[black]%}"
 
 bindkey -e
 
-export NVM_DIR="/Users/toranb/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+bindkey '^b' backward-word
+bindkey '^f' forward-word
+bindkey '^R' history-incremental-search-backward
+bindkey '^R' history-incremental-pattern-search-backward
+bindkey '^?' backward-delete-char
+bindkey '^H' backward-delete-char
 
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -25,3 +29,6 @@ alias push='git push origin master'
 alias pull='git pull --rebase origin master'
 alias ts='tig status'
 alias c='clear'
+
+export NVM_DIR="/Users/toranb/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
