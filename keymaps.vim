@@ -7,4 +7,4 @@ nnoremap <Esc><Esc> :nohlsearch<CR>
 map <Leader>js :%!python -m json.tool<CR>
 inoremap jk <ESC>
 set clipboard=unnamed
-au Filetype javascript setl et ts=4 sw=4
+" au Filetype javascript setl et ts=4 sw=4
