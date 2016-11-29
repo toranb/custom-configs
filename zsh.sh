@@ -30,7 +30,8 @@ alias pull='git pull --rebase origin master'
 alias ts='tig status'
 alias c='clear'
 alias ag='ag --ignore-dir=node_modules --ignore-dir=bower_components --ignore-dir=tmp --ignore-dir=dist --ignore-dir=vendor --ignore-dir=.git'
-alias psql='/Applications/Postgres.app/Contents/Versions/9.6/bin/psql'
+alias startdb='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias stopdb='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 export NVM_DIR="/Users/toranb/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
