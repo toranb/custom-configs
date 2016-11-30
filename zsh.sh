@@ -33,7 +33,5 @@ alias ag='ag --ignore-dir=node_modules --ignore-dir=bower_components --ignore-di
 alias startdb='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias stopdb='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
-export NVM_DIR="/Users/toranb/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
+[ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
