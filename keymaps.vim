@@ -25,5 +25,6 @@ endfunction
 nnoremap <Leader>ri :call RenewTagsFile()<CR>
 nmap <Leader>jj :call InvokeJumpToByType()<CR>
 
+autocmd BufRead,BufNewFile *.js HighlightInlineHbs
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 " au Filetype javascript setl et ts=4 sw=4
