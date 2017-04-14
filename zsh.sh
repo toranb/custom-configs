@@ -39,7 +39,11 @@ alias stopdb='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 cd_nvm_use() {
   if [[ -a ".nvmrc" ]]; then
-    nvm use
+    NODE_VERSION=$(nvm version)
+    NVM_VERSION=$(nvm version $(cat ".nvmrc"))
+    if [ $NODE_VERSION != $NVM_VERSION ]; then
+      nvm use
+    fi
   fi
 }
 
