@@ -36,3 +36,17 @@ alias stopdb='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 [ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+cd_nvm_use() {
+  if [[ -a ".nvmrc" ]]; then
+    nvm use
+  fi
+}
+
+cd() {
+  builtin cd "$@"
+  unset NODE_NAME
+  cd_nvm_use
+  workon_virtualenv
+  workon_node_env
+}
