@@ -11,7 +11,7 @@ set clipboard=unnamed
 set tags=.ztags;
 function! RenewTagsFile()
     exe 'silent !rm -rf .ztags'
-    exe 'silent !ctags -a -Rf .ztags --languages=javascript 2>/dev/null'
+    exe 'silent !ctags -a -Rf .ztags --languages=typescript,javascript 2>/dev/null'
     exe 'redraw!'
 endfunction
 function! InvokeJumpToByType()
