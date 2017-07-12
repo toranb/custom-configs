@@ -1,6 +1,5 @@
-" nnoremap <Leader>d .... now use <Leader>tr instead!
-nnoremap <Leader>tr :VimFilerExplorer -simple -parent -toggle<CR>
-nnoremap <Leader>nt :VimFilerExplorer -simple -parent -find<CR>
+nnoremap <silent> <Leader>tr :<C-u>VimFilerExplorer -split -simple -parent -winwidth=35 -toggle -no-quit<CR>
+nnoremap <silent> <Leader>nt :<C-u>VimFilerExplorer -simple -parent -no-quit -find<CR>
 nnoremap <Leader>a :Search<CR>
 nnoremap <Leader>fb :Unite buffer<CR>
 nnoremap <Esc><Esc> :nohlsearch<CR>
