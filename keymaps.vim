@@ -6,6 +6,8 @@ nnoremap <Esc><Esc> :nohlsearch<CR>
 map <Leader>js :%!python -m json.tool<CR>
 inoremap jk <ESC>
 set clipboard=unnamed
+set autoindent
+set shiftwidth=2
 
 set tags=.ztags;
 function! RenewTagsFile()
