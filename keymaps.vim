@@ -4,6 +4,7 @@ nnoremap <Leader>a :Search<CR>
 nnoremap <Leader>fb :Unite buffer<CR>
 nnoremap <Esc><Esc> :nohlsearch<CR>
 map <Leader>js :%!python -m json.tool<CR>
+map <Leader>cs :%s/[{;}]/&\r/g|norm! =gg<CR>
 inoremap jk <ESC>
 set clipboard=unnamed
 set autoindent
