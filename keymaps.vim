@@ -25,7 +25,8 @@ function! InvokeJumpToByType()
     endif
 endfunction
 nnoremap <Leader>ri :call RenewTagsFile()<CR>
-nmap <Leader>jj :call InvokeJumpToByType()<CR>
+nmap <Leader>jj :tselect <c-r>=expand("<cword>")<CR><CR>
+" nmap <Leader>jj :call InvokeJumpToByType()<CR>
 
 autocmd BufRead,BufNewFile *.js HighlightInlineHbs
 au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
