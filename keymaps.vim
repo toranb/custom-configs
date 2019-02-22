@@ -40,4 +40,6 @@ au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 " let g:ale_elixir_elixir_ls_release = '/Users/username/elixir-ls/rel'
 " autocmd FileType elixir nnoremap <Leader>jj :ALEGoToDefinition<cr>
 
-colorscheme blackboard
+let b:ale_linters = {'javascript': ['eslint']}
+
+colorscheme PaperColor
