@@ -37,9 +37,11 @@ au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 " mix deps.get && mix compile
 " mix elixir_ls.release -o rel
 
-" let g:ale_elixir_elixir_ls_release = '/Users/username/elixir-ls/rel'
-" autocmd FileType elixir nnoremap <Leader>jj :ALEGoToDefinition<cr>
+let g:ale_elixir_elixir_ls_release = "/Users/".expand($USER)."/elixir-ls/rel"
+let b:ale_elixir_elixir_ls_config = {'elixirLS': {'dialyzerEnabled': v:false, 'projectDir': expand($PWD)}}
 
-let b:ale_linters = {'javascript': ['eslint']}
+autocmd FileType elixir nnoremap <Leader>jj :ALEGoToDefinition<cr>
+
+let g:ale_linters = {'javascript': ['eslint'], 'elixir': ['elixir-ls']}
 
 colorscheme PaperColor
