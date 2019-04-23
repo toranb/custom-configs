@@ -1,6 +1,6 @@
-1) git clone the core dotfiles directory from Jarrod
+1) clone my fork of Jarrod's world famous dotfiles
 
-https://github.com/mattjmorrison/dotfiles
+https://github.com/toranb/dotfiles-1
 
 2) cd into the dotfiles directory
 3) clone this project as the custom-configs directory
