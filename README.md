@@ -7,10 +7,15 @@ https://github.com/toranb/dotfiles-1
 
 note: be sure you have the following installed
 
-    brew install the_silver_searcher
-    brew install vim --with-lua
+    brew install vim
     brew install zsh
+    brew install tig
+    brew install tree
     brew install tmux
+    brew install htop
+    brew install ctags
+    brew install the_silver_searcher
+    brew install zsh-syntax-highlighting
 
 After the above installs be sure you are running the equivalent
 
