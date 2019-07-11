@@ -24,6 +24,7 @@ function! InvokeJumpToByType()
         :exe "norm \<C-]>"
     endif
 endfunction
+nnoremap <Leader>er :ExecuteBuffer<CR>
 nnoremap <Leader>ri :call RenewTagsFile()<CR>
 nmap <Leader>jj :tselect <c-r>=expand("<cword>")<CR><CR>
 " nmap <Leader>jj :call InvokeJumpToByType()<CR>
