@@ -24,6 +24,10 @@ function! InvokeJumpToByType()
         :exe "norm \<C-]>"
     endif
 endfunction
+
+au BufLeave * if !&diff | let b:winview = winsaveview() | endif
+au BufEnter * if exists('b:winview') && !&diff | call winrestview(b:winview) | unlet! b:winview | endif
+
 nnoremap <Leader>er :ExecuteBuffer<CR>
 nnoremap <Leader>ri :call RenewTagsFile()<CR>
 nmap <Leader>jj :tselect <c-r>=expand("<cword>")<CR><CR>
