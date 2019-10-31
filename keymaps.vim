@@ -10,6 +10,9 @@ set clipboard=unnamed
 set autoindent
 set shiftwidth=2
 
+" set filetypes as typescript.tsx
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
+
 set tags=.ztags;
 function! RenewTagsFile()
     exe 'silent !rm -rf .ztags'
