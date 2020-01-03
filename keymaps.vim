@@ -2,6 +2,7 @@ nnoremap <silent> <Leader>tr :<C-u>VimFilerExplorer -split -simple -parent -winw
 nnoremap <silent> <Leader>nt :<C-u>VimFilerExplorer -simple -parent -no-quit -find<CR>
 nnoremap <Leader>a :Search<CR>
 nnoremap <Leader>fb :Unite buffer<CR>
+nnoremap <Leader>ff :Clap files<CR>
 nnoremap <Esc><Esc> :nohlsearch<CR>
 map <Leader>js :%!python -m json.tool<CR>
 map <Leader>cs :%s/[{;}]/&\r/g|norm! =gg<CR>
