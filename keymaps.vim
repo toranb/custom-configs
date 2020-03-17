@@ -42,6 +42,7 @@ au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 " au Filetype javascript setl et ts=4 sw=4
 
 " git clone git@github.com:JakeBecker/elixir-ls.git
+" git clone https://github.com/elixir-lsp/elixir-ls
 " cd elixir-ls && mkdir rel
 " mix deps.get && mix compile
 " mix elixir_ls.release -o rel
