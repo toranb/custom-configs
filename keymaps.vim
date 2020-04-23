@@ -49,7 +49,7 @@ au FileType xml setlocal equalprg=xmllint\ --format\ --recover\ -\ 2>/dev/null
 
 let g:ale_enabled = 0
 let g:ale_elixir_elixir_ls_release = "/Users/".expand($USER)."/elixir-ls/rel"
-let b:ale_elixir_elixir_ls_config = {'elixirLS': {'dialyzerEnabled': v:false, 'projectDir': expand($PWD)}}
+let g:ale_elixir_elixir_ls_config = {'elixirLS': {'dialyzerEnabled': v:false}}
 
 autocmd FileType elixir nnoremap <Leader>jj :ALEGoToDefinition<cr>
 
