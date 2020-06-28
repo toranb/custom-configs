@@ -55,6 +55,9 @@ autocmd FileType elixir nnoremap <Leader>jj :ALEGoToDefinition<cr>
 
 let g:ale_linters = {'javascript': ['eslint'], 'elixir': ['elixir-ls']}
 
+set completeopt=menu,menuone,preview,noselect,noinsert
+let g:ale_completion_enabled = 1
+
 let g:clap_disable_run_rooter = v:true
 
 colorscheme PaperColor
