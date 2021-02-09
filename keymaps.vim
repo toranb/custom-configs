@@ -14,6 +14,13 @@ set shiftwidth=2
 " set filetypes as typescript.tsx
 autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 
+function! FormatJavaScript()
+    :%s/;/;\r/gc
+    :%s/}/}\r/gc
+    :%s/{/{\r/gc
+endfun
+map <Leader>jk :call FormatJavaScript()<CR>
+
 set tags=.ztags;
 function! RenewTagsFile()
     exe 'silent !rm -rf .ztags'
