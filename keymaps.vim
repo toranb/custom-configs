@@ -41,7 +41,8 @@ au BufEnter * if exists('b:winview') && !&diff | call winrestview(b:winview) | u
 
 nnoremap <Leader>er :ExecuteBuffer<CR>
 nnoremap <Leader>ri :call RenewTagsFile()<CR>
-nmap <Leader>jj :tselect <c-r>=expand("<cword>")<CR><CR>
+nmap <Leader>jj :tjump <c-r>=expand("<cword>")<CR><CR>
+" nmap <Leader>jj :tselect <c-r>=expand("<cword>")<CR><CR>
 " nmap <Leader>jj :call InvokeJumpToByType()<CR>
 
 autocmd BufRead,BufNewFile *.js HighlightInlineHbs
