@@ -1,3 +1,4 @@
+syntax on
 nnoremap <silent> <Leader>tr :<C-u>VimFilerExplorer -split -simple -parent -winwidth=35 -toggle -no-quit<CR>
 nnoremap <silent> <Leader>nt :<C-u>VimFilerExplorer -simple -parent -no-quit -find<CR>
 nnoremap <Leader>a :Search<CR>
@@ -66,5 +67,4 @@ set completeopt=menu,menuone,preview,noselect,noinsert
 let g:ale_completion_enabled = 1
 
 let g:clap_disable_run_rooter = v:true
-
-colorscheme PaperColor
+colorscheme onedark
